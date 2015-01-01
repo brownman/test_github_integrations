@@ -15,7 +15,7 @@ branches:
     - master
     
 before_install:
-  - chmod u+x *.sh . -R
+  - chmod u+x ./travis.sh
 
 install:
   - echo let us start
