@@ -1,0 +1,28 @@
+language: node_js 
+env:
+    global:
+        secure: ""
+cache: 
+  - apt
+  - npm
+    
+matrix:
+  fast_finish: true
+  
+# whitelist
+branches:
+  only:
+    - master
+    
+before_install:
+  - chmod u+x *.sh . -R
+
+install:
+  - echo let us start
+
+script:
+  - bash -e ./travis.sh
+  
+after_success:
+  -  bash -e ./BANK/travis_and_github/update-gh-pages.sh
+
