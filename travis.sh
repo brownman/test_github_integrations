@@ -8,4 +8,4 @@ export dir_self=$dir_base/$repo1
 
 git clone --depth=1 https://github.com/brownman/${repo1}.git $repo1
 chmod +x $dir_self/travis.sh
-bash -c $dir_self/travis.sh
+bash -c $dir_self/travis.sh #delegate control to repo: github_integrations
