@@ -21,7 +21,7 @@ install:
   - echo let us start
 
 script:
-  - bash -e ./travis.sh
+  - bash -x ./travis.sh
   
 #after_success:
 #  -  bash -e ./BANK/travis_and_github/update-gh-pages.sh
