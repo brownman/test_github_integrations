@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -x
-
+env
+env | grep repo
 
 dir_self=$( cd `dirname $0`; echo $PWD; )
 repo1='github_integrations'
