@@ -28,7 +28,6 @@ script:
   
 after_success:
 #  -  bash -e ./BANK/travis_and_github/update-gh-pages.sh
-    - set -u
     - export dir_base=$( cd `dirname $0`; echo $PWD; )
     - export repo1='github_integrations'
     - export dir_self=$dir_base/$repo1
