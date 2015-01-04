@@ -24,7 +24,7 @@ install:
 #script:
 #  - bash -x ./travis.sh
 script:
-    - echo -e "<h1>TRAVIS_BUILD_NUMBER : $TRAVIS_BUILD_NUMBER</h1>" >> index.html
+    - echo -e "<h1> TRAVIS_BUILD_NUMBER : $TRAVIS_BUILD_NUMBER </h1>" >> index.html
     - cat index.html
   
 after_success:
